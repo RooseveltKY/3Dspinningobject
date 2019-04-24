@@ -10,7 +10,7 @@
     var img;
     
       function preload() {
-        img= loadImage('texture1.jpeg');
+        img= loadImage('jupiter.png');
       }
       function setup() {
         createCanvas(w,h,WEBGL)
@@ -26,7 +26,7 @@
         texture(img);
         rotateX(mouseY/750);//rotate x degrees on the x-axis //To decrease sensitivity, divide the mouse
         rotateY(mouseX/750);//rotate x degrees on the y-axis //Inverted for sanity
-        box(300);
+        sphere(300);
       }
     </script>
   </body>

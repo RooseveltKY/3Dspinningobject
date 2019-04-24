@@ -25,8 +25,11 @@
         specularMaterial(255);//Shininess of light
         noStroke();
         texture(img);
-        rotateX(mouseY/750);//rotate x degrees on the x-axis //To decrease sensitivity, divide the mouse
-        rotateY(mouseX/750);//rotate x degrees on the y-axis //Inverted for sanity
+        //rotateX(mouseY/750);//rotate x degrees on the x-axis //To decrease sensitivity, divide the mouse
+        //rotateY(mouseX/750);//rotate x degrees on the y-axis //Inverted for sanity
+        rotateX(frameCount* 0.01);
+        rotateY(frameCount* 0.01);
+        torus(200,64,50,50);
         sphere(300);
       }
     </script>

@@ -16,11 +16,12 @@
         createCanvas(w,h,WEBGL)
       }
       function draw() {
-        background(255);
+        clear();
+        background("rgba(255,255,255,0)");
         var locX= mouseX-width/2;
         var locY= mouseY-height/2;
         //directionalLight(r,g,b,x,y,z)
-        directionalLight(0,0,0,-locX, -locY,-175);//-175 makes the light shine in the front
+        directionalLight(255,255,255,-locX, -locY,-175);//-175 makes the light shine in the front
         specularMaterial(255);//Shininess of light
         noStroke();
         texture(img);
